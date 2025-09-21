@@ -1,0 +1,291 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.API\\Inventario.API.csproj": {}
+  },
+  "projects": {
+    "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.API\\Inventario.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.API\\Inventario.API.csproj",
+        "projectName": "Inventario.API",
+        "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.API\\Inventario.API.csproj",
+        "packagesPath": "C:\\Users\\keila\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\keila\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj": {
+                "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj"
+              },
+              "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj": {
+                "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj",
+        "projectName": "Inventario.Application",
+        "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj",
+        "packagesPath": "C:\\Users\\keila\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\keila\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj": {
+                "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj",
+        "projectName": "Inventario.Domain",
+        "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj",
+        "packagesPath": "C:\\Users\\keila\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\keila\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj",
+        "projectName": "Inventario.Infrastructure",
+        "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\keila\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\keila\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj": {
+                "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj"
+              },
+              "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj": {
+                "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.90, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.9.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

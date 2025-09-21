@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oaqNKhEwFmY=",
+  "success": true,
+  "projectFilePath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\keila\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

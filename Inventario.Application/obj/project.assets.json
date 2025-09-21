@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Inventario.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Inventario.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inventario.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
+    "Inventario.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Inventario.Domain/Inventario.Domain.csproj",
+      "msbuildProject": "../Inventario.Domain/Inventario.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "FluentValidation >= 12.0.0",
+      "Inventario.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\keila\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj",
+      "projectName": "Inventario.Application",
+      "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\Inventario.Application.csproj",
+      "packagesPath": "C:\\Users\\keila\\.nuget\\packages\\",
+      "outputPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\keila\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj": {
+              "projectPath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Domain\\Inventario.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

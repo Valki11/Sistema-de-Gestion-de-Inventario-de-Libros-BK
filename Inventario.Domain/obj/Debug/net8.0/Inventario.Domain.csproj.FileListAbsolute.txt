@@ -1,0 +1,12 @@
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\bin\Debug\net8.0\Inventario.Domain.deps.json
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\bin\Debug\net8.0\Inventario.Domain.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\bin\Debug\net8.0\Inventario.Domain.pdb
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.AssemblyInfoInputs.cache
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.AssemblyInfo.cs
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.sourcelink.json
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\refint\Inventario.Domain.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\Inventario.Domain.pdb
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Domain\obj\Debug\net8.0\ref\Inventario.Domain.dll

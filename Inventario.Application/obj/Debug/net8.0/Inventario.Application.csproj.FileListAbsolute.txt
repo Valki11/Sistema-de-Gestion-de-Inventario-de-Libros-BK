@@ -1,0 +1,16 @@
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\bin\Debug\net8.0\Inventario.Application.deps.json
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\bin\Debug\net8.0\Inventario.Application.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\bin\Debug\net8.0\Inventario.Application.pdb
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\bin\Debug\net8.0\Inventario.Domain.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\bin\Debug\net8.0\Inventario.Domain.pdb
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.csproj.AssemblyReference.cache
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.AssemblyInfoInputs.cache
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.AssemblyInfo.cs
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.sourcelink.json
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventar.25F09479.Up2Date
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\refint\Inventario.Application.dll
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\Inventario.Application.pdb
+C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.Application\obj\Debug\net8.0\ref\Inventario.Application.dll
