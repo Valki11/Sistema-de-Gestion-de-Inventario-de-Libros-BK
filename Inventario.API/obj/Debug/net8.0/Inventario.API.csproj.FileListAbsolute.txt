@@ -10,14 +10,7 @@ C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Oracle.EntityFrameworkCore.dll
@@ -26,7 +19,6 @@ C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
 C:\PROYECTOS\Sistema-de-Gestion-de-Inventario-de-Libros\Inventario.API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll

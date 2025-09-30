@@ -16,7 +16,6 @@ public class BibliotecaDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        
         modelBuilder.HasDefaultSchema("BIBLIOTECA_USER");
 
         modelBuilder.ApplyConfiguration(new RolConfig());
@@ -45,7 +44,7 @@ internal sealed class UsuarioConfig : IEntityTypeConfiguration<Usuario>
 {
     public void Configure(EntityTypeBuilder<Usuario> b)
     {
-        b.ToTable("USUARIO");
+        b.ToTable("USUARIO", "BIBLIOTECA_USER");  
         b.HasKey(x => x.IdUsuario);
         b.Property(x => x.IdUsuario).HasColumnName("ID_USUARIO");
         b.Property(x => x.NombreUsuario).HasColumnName("NOMBRE_USUARIO").HasMaxLength(100).IsRequired();
@@ -58,6 +57,7 @@ internal sealed class UsuarioConfig : IEntityTypeConfiguration<Usuario>
             .HasConstraintName("FK_USUARIO_ROL");
     }
 }
+
 
 internal sealed class AutorConfig : IEntityTypeConfiguration<Autor>
 {
