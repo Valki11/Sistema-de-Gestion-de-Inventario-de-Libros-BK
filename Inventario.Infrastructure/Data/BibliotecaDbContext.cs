@@ -23,6 +23,19 @@ public class BibliotecaDbContext : DbContext
         modelBuilder.ApplyConfiguration(new AutorConfig());
         modelBuilder.ApplyConfiguration(new LibroConfig());
         modelBuilder.ApplyConfiguration(new PrestamoConfig());
+        modelBuilder.Entity<Autor>(entity =>        {
+            entity.ToTable("AUTOR");
+
+            entity.HasKey(e => e.IdAutor);
+
+            entity.Property(e => e.IdAutor)
+                .HasColumnName("ID_AUTOR")
+                .ValueGeneratedOnAdd(); 
+            entity.Property(e => e.NombreAutor)
+                .HasColumnName("NOMBRE_AUTOR")
+                .HasMaxLength(255);
+        });
+
     }
 }
 
