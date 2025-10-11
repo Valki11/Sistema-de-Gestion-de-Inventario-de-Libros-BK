@@ -51,17 +51,20 @@ public async Task<IEnumerable<UsuarioDto>> GetAllAsync(CancellationToken ct = de
     }
 
     public async Task<bool> UpdateAsync(decimal id, UsuarioUpdateDto dto, CancellationToken ct = default)
-    {
-        var entity = await _db.Usuarios.FirstOrDefaultAsync(x => x.IdUsuario == id, ct);
-        if (entity is null) return false;
+{
+    var entity = await _db.Usuarios.FirstOrDefaultAsync(x => x.IdUsuario == id, ct);
+    if (entity is null) return false;
 
-        entity.NombreUsuario = dto.NombreUsuario;
+    entity.NombreUsuario = dto.NombreUsuario;
+    entity.IdRol = dto.IdRol;
+
+    if (!string.IsNullOrWhiteSpace(dto.ContrasenaUsuario))
         entity.ContrasenaUsuario = dto.ContrasenaUsuario;
-        entity.IdRol = dto.IdRol;
 
-        await _db.SaveChangesAsync(ct);
-        return true;
-    }
+    await _db.SaveChangesAsync(ct);
+    return true;
+}
+
 
     public async Task<bool> DeleteAsync(decimal id, CancellationToken ct = default)
     {

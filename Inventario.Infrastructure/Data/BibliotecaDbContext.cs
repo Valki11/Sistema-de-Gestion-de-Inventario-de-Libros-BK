@@ -36,6 +36,30 @@ public class BibliotecaDbContext : DbContext
                 .HasMaxLength(255);
         });
 
+        modelBuilder.Entity<Usuario>(entity =>
+        {
+            entity.ToTable("USUARIO");
+            entity.HasKey(e => e.IdUsuario);
+
+            entity.Property(e => e.IdUsuario)
+                .HasColumnName("ID_USUARIO")
+                .ValueGeneratedOnAdd(); 
+                
+            entity.Property(e => e.NombreUsuario)
+                .HasColumnName("NOMBRE_USUARIO")
+                .HasMaxLength(100)
+                .IsRequired();
+
+            entity.Property(e => e.ContrasenaUsuario)
+                .HasColumnName("CONTRASENA_USUARIO")
+                .HasMaxLength(200)
+                .IsRequired();
+
+            entity.Property(e => e.IdRol)
+                .HasColumnName("ID_ROL")
+                .IsRequired();
+        });
+
     }
 }
 

@@ -3,8 +3,9 @@ namespace Inventario.Application.DTOs;
 public record UsuarioDto(
     decimal IdUsuario,
     string NombreUsuario,
-    string Rol
+    string NombreRol
 );
+
 
 public record UsuarioCreateDto(
     string NombreUsuario,
