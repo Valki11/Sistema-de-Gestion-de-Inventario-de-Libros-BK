@@ -11,39 +11,54 @@ public class PrestamoService : IPrestamoService
 
     public async Task<decimal> CrearPrestamoAsync(decimal idLibro, decimal idUsuario, CancellationToken ct = default)
     {
-        
-        var libro = await _db.Libros.FirstOrDefaultAsync(l => l.IdLibro == idLibro, ct);
-        if (libro is null) throw new InvalidOperationException("Libro no encontrado.");
-        if ((libro.NumeroCopias ?? 0) <= 0) throw new InvalidOperationException("No hay copias disponibles.");
+        var libro = await _db.Libros.FirstOrDefaultAsync(l => l.IdLibro == idLibro, ct)
+            ?? throw new InvalidOperationException("Libro no encontrado");
 
-        var prestamo = new Domain.Entities.Prestamo
-        {
-            IdLibro = idLibro,
-            IdUsuario = idUsuario,
-            FechaRegistroPrestamo = DateTime.UtcNow,
-            FechaDevolucion = null
-        };
+        if ((libro.NumeroCopias ?? 0) <= 0)
+            throw new InvalidOperationException("No hay copias disponibles");
+
+        if (libro.EstadoLibro == "NO DISPONIBLE")
+                    throw new InvalidOperationException("No se encuentra disponible");
+
+        var usuario = await _db.Usuarios
+            .Include(u => u.Rol)
+            .FirstOrDefaultAsync(u => u.IdUsuario == idUsuario, ct)
+            ?? throw new InvalidOperationException("Usuario no encontrado");
+
+        if (!string.Equals(usuario.Rol.NombreRol, "LECTOR", StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException("El préstamo solo puede asignarse a usuarios con rol LECTOR");
 
         libro.NumeroCopias = (libro.NumeroCopias ?? 0) - 1;
 
+        var prestamo = new Prestamo
+        {
+            IdLibro = idLibro,
+            IdUsuario = idUsuario,
+            FechaPrestamo = DateTime.Now,
+            Estado = "NO DISPONIBLE"
+        };
+
         _db.Prestamos.Add(prestamo);
         await _db.SaveChangesAsync(ct);
-        return prestamo.IdPrestamo;
+
+        return prestamo.IdPrestamo; 
     }
 
     public async Task<bool> DevolverPrestamoAsync(decimal idPrestamo, CancellationToken ct = default)
     {
-        var p = await _db.Prestamos.FirstOrDefaultAsync(x => x.IdPrestamo == idPrestamo, ct);
-        if (p is null) return false;
+        var prestamo = await _db.Prestamos
+            .Include(p => p.Libro)
+            .FirstOrDefaultAsync(p => p.IdPrestamo == idPrestamo, ct);
 
-        if (p.FechaDevolucion is not null) return true; // ya devuelto
+        if (prestamo is null) return false;
+        if (string.Equals(prestamo.Estado, "DISPONIBLE", StringComparison.OrdinalIgnoreCase)) return true;
 
-        p.FechaDevolucion = DateTime.UtcNow;
-
-        var libro = await _db.Libros.FirstOrDefaultAsync(l => l.IdLibro == p.IdLibro, ct);
-        if (libro is not null) libro.NumeroCopias = (libro.NumeroCopias ?? 0) + 1;
+        prestamo.Estado = "DISPONIBLE";
+        prestamo.FechaDevolucion = DateTime.Now;
+        prestamo.Libro.NumeroCopias = (prestamo.Libro.NumeroCopias ?? 0) + 1;
 
         await _db.SaveChangesAsync(ct);
         return true;
     }
+
 }

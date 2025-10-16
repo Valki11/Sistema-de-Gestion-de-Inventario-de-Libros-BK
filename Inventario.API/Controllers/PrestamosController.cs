@@ -1,5 +1,6 @@
 using Inventario.Application.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Inventario.API.Controllers;
 
@@ -11,6 +12,7 @@ public class PrestamosController : ControllerBase
     public PrestamosController(IPrestamoService service) => _service = service;
 
     [HttpPost]
+    [Authorize(Roles = "BIBLIOTECARIO")]
     public async Task<ActionResult> Crear([FromQuery] decimal idLibro, [FromQuery] decimal idUsuario, CancellationToken ct)
     {
         var id = await _service.CrearPrestamoAsync(idLibro, idUsuario, ct);
@@ -22,6 +24,7 @@ public class PrestamosController : ControllerBase
         => Ok(new { idPrestamo });
 
     [HttpPost("{idPrestamo:decimal}/devolver")]
+    [Authorize(Roles = "BIBLIOTECARIO")]
     public async Task<ActionResult> Devolver([FromRoute] decimal idPrestamo, CancellationToken ct)
         => await _service.DevolverPrestamoAsync(idPrestamo, ct) ? NoContent() : NotFound();
 }
