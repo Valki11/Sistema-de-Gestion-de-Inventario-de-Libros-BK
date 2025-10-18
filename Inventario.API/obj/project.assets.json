@@ -581,7 +581,7 @@
           "Inventario.Application": "1.0.0",
           "Inventario.Domain": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
-          "Oracle.EntityFrameworkCore": "8.23.20",
+          "Oracle.EntityFrameworkCore": "8.23.40",
           "Oracle.ManagedDataAccess.Core": "23.9.1"
         },
         "compile": {
@@ -1572,17 +1572,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Inventario.Infrastructure depende de Oracle.EntityFrameworkCore (>= 8.23.20), pero no se encontró Oracle.EntityFrameworkCore 8.23.20. Se resolvió una mejor coincidencia aproximada de Oracle.EntityFrameworkCore 8.23.40.",
-      "libraryId": "Oracle.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

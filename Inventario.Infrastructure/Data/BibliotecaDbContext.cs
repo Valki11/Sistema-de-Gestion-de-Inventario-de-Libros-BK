@@ -60,6 +60,23 @@ public class BibliotecaDbContext : DbContext
                 .IsRequired();
         });
 
+        modelBuilder.Entity<Prestamo>(entity =>
+        {
+            entity.ToTable("PRESTAMO");
+
+            entity.HasKey(e => e.IdPrestamo);
+
+            entity.Property(e => e.IdPrestamo)
+                .HasColumnName("ID_PRESTAMO")
+                .ValueGeneratedOnAdd(); // 👈 importante para que EF Core entienda que Oracle genera el ID
+
+            entity.Property(e => e.FechaRegistroPrestamo).HasColumnName("FECHA_REGISTRO_PRESTAMO");
+            entity.Property(e => e.IdLibro).HasColumnName("ID_LIBRO");
+            entity.Property(e => e.IdUsuario).HasColumnName("ID_USUARIO");
+            entity.Property(e => e.FechaDevolucion).HasColumnName("FECHA_DEVOLUCION");
+            entity.Property(e => e.Estado).HasColumnName("ESTADO");
+        });
+
     }
 }
 
@@ -135,11 +152,19 @@ internal sealed class PrestamoConfig : IEntityTypeConfiguration<Prestamo>
     {
         b.ToTable("PRESTAMO");
         b.HasKey(x => x.IdPrestamo);
+
         b.Property(x => x.IdPrestamo).HasColumnName("ID_PRESTAMO");
-        b.Property(x => x.FechaRegistroPrestamo).HasColumnName("FECHA_REGISTRO_PRESTAMO");
         b.Property(x => x.IdLibro).HasColumnName("ID_LIBRO").IsRequired();
         b.Property(x => x.IdUsuario).HasColumnName("ID_USUARIO").IsRequired();
+
+        b.Property(x => x.FechaPrestamo).HasColumnName("FECHA_PRESTAMO"); 
         b.Property(x => x.FechaDevolucion).HasColumnName("FECHA_DEVOLUCION");
+        b.Property(x => x.FechaRegistroPrestamo).HasColumnName("FECHA_REGISTRO_PRESTAMO");
+
+        b.Property(x => x.Estado)
+            .HasColumnName("ESTADO")
+            .HasMaxLength(20)
+            .IsRequired();
 
         b.HasOne(x => x.Libro)
             .WithMany(l => l.Prestamos)
@@ -152,5 +177,6 @@ internal sealed class PrestamoConfig : IEntityTypeConfiguration<Prestamo>
             .HasConstraintName("FK_PRESTAMO_USUARIO");
     }
 }
+
 
 #endregion

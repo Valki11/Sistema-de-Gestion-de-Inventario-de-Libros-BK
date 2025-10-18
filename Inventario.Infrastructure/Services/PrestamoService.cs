@@ -1,3 +1,4 @@
+using Inventario.Domain.Entities;
 using Inventario.Application.Contracts;
 using Inventario.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,7 @@ public class PrestamoService : IPrestamoService
         if ((libro.NumeroCopias ?? 0) <= 0)
             throw new InvalidOperationException("No hay copias disponibles");
 
-        if (libro.EstadoLibro == "NO DISPONIBLE")
+        if (libro.EstadoLibro == "PRESTADO")
                     throw new InvalidOperationException("No se encuentra disponible");
 
         var usuario = await _db.Usuarios
@@ -35,7 +36,7 @@ public class PrestamoService : IPrestamoService
             IdLibro = idLibro,
             IdUsuario = idUsuario,
             FechaPrestamo = DateTime.Now,
-            Estado = "NO DISPONIBLE"
+            Estado = "PRESTADO"
         };
 
         _db.Prestamos.Add(prestamo);
@@ -51,14 +52,34 @@ public class PrestamoService : IPrestamoService
             .FirstOrDefaultAsync(p => p.IdPrestamo == idPrestamo, ct);
 
         if (prestamo is null) return false;
-        if (string.Equals(prestamo.Estado, "DISPONIBLE", StringComparison.OrdinalIgnoreCase)) return true;
+        if (string.Equals(prestamo.Estado, "DEVUELTO", StringComparison.OrdinalIgnoreCase)) return true;
 
-        prestamo.Estado = "DISPONIBLE";
+        prestamo.Estado = "DEVUELTO";
         prestamo.FechaDevolucion = DateTime.Now;
         prestamo.Libro.NumeroCopias = (prestamo.Libro.NumeroCopias ?? 0) + 1;
 
         await _db.SaveChangesAsync(ct);
         return true;
     }
+
+public async Task<IEnumerable<object>> ObtenerTodosAsync(CancellationToken ct = default)
+{
+    return await _db.Prestamos
+        .Include(p => p.Libro)
+        .Include(p => p.Usuario)
+        .Select(p => new
+        {
+            p.IdPrestamo,
+            p.IdLibro,
+            TituloLibro = p.Libro.TituloLibro,
+            p.IdUsuario,
+            NombreUsuario = p.Usuario.NombreUsuario,
+            p.FechaPrestamo,
+            p.FechaDevolucion,
+            p.Estado
+        })
+        .OrderByDescending(p => p.FechaPrestamo)
+        .ToListAsync(ct);
+}
 
 }

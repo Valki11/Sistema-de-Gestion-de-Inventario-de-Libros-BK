@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZrMuR3vDwxA=",
+  "dgSpecHash": "DNO/Qr7peP4=",
   "success": true,
   "projectFilePath": "C:\\PROYECTOS\\Sistema-de-Gestion-de-Inventario-de-Libros\\Inventario.Infrastructure\\Inventario.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -29,16 +29,5 @@
     "C:\\Users\\keila\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\keila\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Inventario.Infrastructure depende de Oracle.EntityFrameworkCore (>= 8.23.20), pero no se encontró Oracle.EntityFrameworkCore 8.23.20. Se resolvió una mejor coincidencia aproximada de Oracle.EntityFrameworkCore 8.23.40.",
-      "libraryId": "Oracle.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
